@@ -21,7 +21,13 @@ export function App() {
 				<NewNoteCard />
 
 				{Array.from({ length: 4 }).map((_, index) => (
-					<NoteCard key={index} />
+					<NoteCard 
+						key={index} 
+						note={{
+							createdAt: "2",
+							content: "No app do NLW vamos criar um layout incrível, assim podemos entregar a melhor experiência para a comunidade. <br /> Na aplicação React vamos criar um projeto que permite o usuário salvar notas em texto ou áudio."
+						}} 
+					/>
 				))}
 			</div>
 		</div>
